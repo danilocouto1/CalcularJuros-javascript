@@ -9,8 +9,10 @@ let taxa_juros;
 if (valor > 0) {
     if (dias_passados <= 15 && dias_passados > 0) {
         taxa_juros = 5;
-    } else {
+    } else if (dias_passados > 15) {
         taxa_juros = 10;
+    } {
+        console.log("Você esta em dia!")
     }
 } else {
     console.log("O valo da divida deve ser maior que zero")
