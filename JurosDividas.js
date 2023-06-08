@@ -12,10 +12,23 @@ if (valor > 0) {
         taxa_juros = 5;
 
         valor_juros = valor + ((valor / 100) * taxa_juros);
+
+        //Saida de dados
+        console.log("Valor original da divida: "+valor)
+        console.log("Dias atrasados: "+dias_passados)
+        console.log("Taxas de juros: "+taxa_juros+"%")
+        console.log("Valor total com Juros "+valor_juros)
     } else if (dias_passados > 15) {
         taxa_juros = 10;
 
         valor_juros = valor + ((valor / 100) * taxa_juros);
+
+
+        //Saida de dados
+        console.log("Valor original da divida: "+valor)
+        console.log("Dias atrasados: "+dias_passados)
+        console.log("Taxas de juros: "+taxa_juros+"%")
+        console.log("Valor total com Juros "+valor_juros)
     } {
         console.log("Você esta em dia!")
     }
