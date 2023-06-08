@@ -1,0 +1,1 @@
+import  entrada from 'readline-sync';
