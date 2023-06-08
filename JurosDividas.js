@@ -1,4 +1,4 @@
-import  entrada from 'readline-sync';
+import entrada from 'readline-sync';
 
 //Entrada de dados
 let valor = entrada.question("Informe o valor devido: ");
@@ -11,7 +11,7 @@ if (valor > 0) {
     if (dias_passados <= 15 && dias_passados > 0) {
         taxa_juros = 5;
 
-        valor_juros = valor + ((valor / 100) * taxa_juros);
+        valor_juros = Number(valor) + ((Number(valor) / 100) * taxa_juros);
 
         //Saida de dados
         console.log("Valor original da divida: "+valor)
@@ -21,7 +21,7 @@ if (valor > 0) {
     } else if (dias_passados > 15) {
         taxa_juros = 10;
 
-        valor_juros = valor + ((valor / 100) * taxa_juros);
+        valor_juros = Number(valor) + ((Number(valor) / 100) * taxa_juros);
 
 
         //Saida de dados
